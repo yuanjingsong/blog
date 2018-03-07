@@ -1,6 +1,6 @@
-|      title      |
-| :-------------: |
-| Java中的ArrayList |
+---
+title: Java中的ArrayList
+---
 
 #### Java中的ArrayList
 
