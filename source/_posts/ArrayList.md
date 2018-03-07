@@ -1,5 +1,6 @@
 ---
 title: Java中的ArrayList
+date: 2018-03-07
 ---
 
 #### Java中的ArrayList
