@@ -5,6 +5,7 @@ before_install:
     - git config --global user.email $GITHUB_EMAIL
     - git config --global user.name $GITHUB_USERNAME
     - npm i hexo-cli -g
+    - ssh git@github.com
     - git clone $THEME_URI themes/$THEME_NAME
 script:
     - hexo config theme $THEME_NAME
