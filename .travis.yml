@@ -2,10 +2,13 @@ language: node_js
 node_js: 
     - "6"
 before_install:
+    - echo  $GITHUB_EMAIL 
+    - echo  $GITHUB_USERNAME
+    - echo  $THEME_URI
+    - echo  $THEME_NAME
     - git config --global user.email $GITHUB_EMAIL
     - git config --global user.name $GITHUB_USERNAME
     - npm i hexo-cli -g
-    - ssh git@github.com
     - git clone $THEME_URI themes/$THEME_NAME
 script:
     - hexo config theme $THEME_NAME
