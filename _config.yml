@@ -34,7 +34,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 auto_excerpt:
-    enable:true
+    enable: true
     length: 150
 highlight:
   enable: true
