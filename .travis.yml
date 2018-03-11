@@ -2,8 +2,6 @@ language: node_js
 node_js: 
     - "6"
 before_install:
-    - ssh-keygen -t rsa -C "532473857@qq.com"
-    - cat id_rsa.pub
     - git config --global user.email $GITHUB_EMAIL
     - git config --global user.name $GITHUB_USERNAME
     - npm i hexo-cli -g
