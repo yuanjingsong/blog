@@ -2,10 +2,10 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
+title: Oath
+subtitle: Stay Alive
+description: null
+author: yuanjngsong
 language: zh-Hans
 timezone:
 # URL
@@ -55,6 +55,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+mathjax:
+    enable: true
+    per_page: true
 theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
