@@ -1,3 +1,7 @@
+---
+title: HW1作业
+date: 2018-07-20
+---
 本文是台湾大学李宏毅所授的机器学习 (2017 Fall) 的 HW1。[相关链接](https://ntumlta.github.io/2017fall-ml-hw1/)
 
 ### 理论
