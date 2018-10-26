@@ -85,9 +85,6 @@ void writer() {
 3. 写者之间互斥
 4. 当读者和写者同时等待时，优先唤醒写者
 
-mutex, enable_read, readingCount, enable_entry
-
-
 写者优先的策略可以引入一个 `writingCount` 记录写者个数，当 `writingCount` 等于 0 时，允许读者读，否则禁止读者读，此时，如果用 `mutex` 控制禁止读者读，可能会影响写者本身的写允许，所以引入一个信号量 `enable_entry` 控制允许读者读，同时读者之间需要修改 `writingCount`，所以引入 `enable_write` 控制写者对 `writingCount` 的互斥操作。如果出现读者在等待读的时候，后续出现一个写者，我们需要让写者优先被唤醒，所以需要一个信号量 `skip` 让读者进入等待，即每次只有一个读者可以进入。
 
 ```
